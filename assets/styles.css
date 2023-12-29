@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-text: #000000;
+  --secondary-text: #5d5d5d;
+  --light-text: #fff;
+}
+
+* {
+  font-family: "Unbounded", sans-serif;
+}
+
+header .container {
+  border-bottom: 1px solid #eeeeee;
+}
+
+footer .container {
+  border-top: 1px solid #eeeeee;
+}
+
+header a,
+footer a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.container,
+.center-border-box {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: var(--primary-text);
+}
+
+p {
+  font-weight: 200;
+  color: var(--secondary-text);
+}
+/* .home-hero-section{
+    height: 100vh;
+} */
+
+.home-hero-section h6 {
+  color: var(--secondary-text);
+  font-size: 20px;
+}
+
+.home-hero-section h1 {
+  font-size: 128px;
+}
+
+.home-about h2 {
+  font-size: 40px;
+}
+
+.btn-outline-primary {
+  border: 1px solid #000;
+  color: var(--primary-text);
+  font-weight: 300;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid #000;
+  background-color: var(--primary-text);
+
+  color: var(--light-text);
+  font-weight: 300;
+}
+
+.img-cover {
+  background-color: #f6f6f6;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img-cover img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: all 0.5s;
+}
+
+.img-cover img:hover {
+  transform: scale(1.02);
+}
+
+.home-about h1 {
+  font-size: 20px;
+}
+
+.get-in-touch h1 {
+  font-size: 64px;
+}
+
+.project-thumbnail {
+  cursor: url(img/Frame\ 81.png), auto;
+  transition: cursor 0.5s ease;
+}
+
+.center-border-box {
+  width: 500px;
+  max-width: 500px;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.about-highlight-banner {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.about-highlight-banner h1,
+.about-work-journey h2 {
+  font-weight: 300;
+}
+
+.about-highlight-banner h1 {
+  font-size: 40px;
+}
+.about-work-journey h2 {
+  font-size: 32px;
+}
+.about-work-journey span {
+  color: var(--secondary-text);
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.about-work-journey p {
+  color: var(--primary-text);
+  font-size: 20px;
+}
+
+.about-hero .content-block {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+
+}
+
+.about-hero .content-block h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.about-hero .content-block p{
+    font-size: 15px;
+}

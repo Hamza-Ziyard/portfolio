@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+}
+
 :root {
   --primary-text: #000000;
   --secondary-text: #5d5d5d;
@@ -8,6 +28,10 @@
 
 * {
   font-family: "Unbounded", sans-serif;
+}
+
+body {
+  cursor: url(../assets/img/cursor.png), auto;
 }
 
 header .container {
@@ -45,9 +69,11 @@ p {
   font-weight: 200;
   color: var(--secondary-text);
 }
-/* .home-hero-section{
-    height: 100vh;
-} */
+
+a:hover,
+button:hover {
+  cursor: url(img/pointer.png), auto !important;
+}
 
 .home-hero-section h6 {
   color: var(--secondary-text);
@@ -55,17 +81,21 @@ p {
 }
 
 .home-hero-section h1 {
-  font-size: 128px;
+  font-size: 50px;
 }
 
 .home-about h2 {
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .btn-outline-primary {
   border: 1px solid #000;
   color: var(--primary-text);
   font-weight: 300;
+}
+
+.btn-outline-primary:hover img {
+  filter: invert(100);
 }
 
 .btn-outline-primary:hover {
@@ -93,20 +123,20 @@ p {
 }
 
 .home-about h1 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .get-in-touch h1 {
-  font-size: 64px;
+  font-size: 40px;
 }
 
 .project-thumbnail {
-  cursor: url(img/Frame\ 81.png), auto;
+  cursor: url(img/lock.png), auto;
   transition: cursor 0.5s ease;
 }
 
 .center-border-box {
-  width: 500px;
+  width: 200px;
   max-width: 500px;
   height: 100vh;
   position: fixed;
@@ -126,23 +156,70 @@ p {
 }
 
 .about-highlight-banner h1 {
-  font-size: 40px;
+  font-size: 20px;
 }
 .about-work-journey h2 {
-  font-size: 32px;
+  font-size: 20px;
 }
 .about-work-journey span {
   color: var(--secondary-text);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 200;
 }
 
 .about-work-journey p {
   color: var(--primary-text);
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .about-hero .content-block {
+  width: 100%;
+}
+
+.about-hero .content-block h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-hero .exp-chevron {
+  transform: rotate(90deg);
+}
+
+.about-hero .content-block p,
+.home-about p,
+.get-in-touch p {
+  font-size: 13px;
+}
+
+.work-place-logo {
+  width: 50%;
+}
+
+footer a,
+header a,
+footer h6 {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 576px) {
+  .home-about h2 {
+    font-size: 40px;
+  }
+  .get-in-touch h1 {
+    font-size: 64px;
+  }
+  .about-hero .content-block p,
+  .home-about p,
+  .get-in-touch p {
+    font-size: 15px;
+  }
+  .center-border-box {
+    width: 350px;
+    transform: translateX(-50%);
+  }
+  .about-hero .content-block {
+    position: absolute;
+    width: 50%;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -150,14 +227,39 @@ p {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(50px);
     border-radius: 10px;
-
+  }
+  .about-highlight-banner h1 {
+    font-size: 40px;
+  }
+  .about-work-journey h2 {
+    font-size: 32px;
+  }
+  .about-work-journey p {
+    font-size: 20px;
+  }
+  .about-work-journey span {
+    font-size: 14px;
+  }
+  .work-place-logo {
+    width: auto;
+  }
+  footer a,
+  header a,
+  footer h6 {
+    font-size: 18px;
+  }
 }
 
-.about-hero .content-block h1{
+@media screen and (min-width: 992px) {
+  .home-hero-section h1 {
+    font-size: 128px;
+  }
+  .center-border-box {
+    width: 500px;
+    transform: translateX(-50%);
+  }
+
+  .about-hero .content-block h1 {
     font-size: 64px;
-    font-weight: 400;
-}
-
-.about-hero .content-block p{
-    font-size: 15px;
+  }
 }

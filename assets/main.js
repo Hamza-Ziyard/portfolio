@@ -1,4 +1,4 @@
-<script>
+{/* <script>
 $(document).ready(function() {
     $(".project-thumbnail").hover(
         function() {
@@ -9,4 +9,4 @@ $(document).ready(function() {
         }
     );
 });
-</script>
+</script> */}

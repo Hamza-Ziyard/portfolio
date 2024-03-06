@@ -1,0 +1,74 @@
+.case-study-hero{
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+.case-study-hero-img-container {
+    position: absolute;
+    overflow: hidden;
+    right: -10%;
+    top: 0;
+    transform: translateY(50px);
+    height: 80vh;
+}
+
+.case-study-hero-img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.case-study-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.case-study-hero-heading {
+    /* Position at the bottom left corner */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+p,ul{
+    line-height: 180%;
+}
+
+h1,h2{
+    font-weight: 600 !important;
+}
+
+
+.rotate-90{
+    transform: rotate(90deg) !important;
+}
+
+@media screen and (min-width: 992px) {
+    .case-study-hero{
+        height: 90vh;
+    }
+    .case-study-hero-img-container {
+        position: absolute;
+        overflow: hidden;
+        right: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80vh;
+    }
+
+.case-study-hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.case-study-hero-img {
+    object-fit: cover;
+}
+
+}

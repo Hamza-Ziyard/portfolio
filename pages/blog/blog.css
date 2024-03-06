@@ -1,0 +1,75 @@
+#hero-image{
+    height: 100%;
+    max-height: 557px;
+    object-fit: cover;
+
+}
+
+h2{
+    font-size: 24px;
+}
+
+.para{
+    line-height: 180%;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.sub-para-image{
+    max-height: 200px;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 14px;
+    color: #000;
+}
+
+  /* Custom styles can be added here */
+a.active-toc {
+    font-weight: 600;
+}
+
+.card{
+    border: none;
+    background: none;
+}
+
+.blog-list{
+    min-height: 90vh;
+}
+
+.ui-helper-hidden-accessible {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6%;
+    color: rgb(0, 165, 74);
+    /* padding: 10px 30px; */
+}
+
+
+#search{
+    width: 400px;
+}
+
+.ui-menu{
+    background: white;
+    font-weight: 200;
+    font-size: 14px;
+    list-style: none;
+    width: 250px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.ui-menu li{
+    margin-bottom:10px;
+    padding: 10px 20px;
+}
+
+.ui-menu li:hover{
+    background-color: rgb(229, 229, 229);
+}

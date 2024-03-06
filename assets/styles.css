@@ -65,7 +65,7 @@ h6 {
   color: var(--primary-text);
 }
 
-p {
+p ,ul{
   font-weight: 200;
   color: var(--secondary-text);
 }
@@ -133,6 +133,11 @@ button:hover {
 .project-thumbnail {
   cursor: url(img/lock.png), auto;
   transition: cursor 0.5s ease;
+}
+
+.project-thumbnail.project-thumbnail-update{
+
+  cursor: url(img/navigate.png), auto;
 }
 
 .center-border-box {
@@ -262,4 +267,10 @@ footer h6 {
   .about-hero .content-block h1 {
     font-size: 64px;
   }
+}
+
+
+
+.rounded{
+  border-radius: 10px !important;
 }

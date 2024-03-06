@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "heading": "How to start your UI/UX journey",
+        "author": "Hamza Ziyard",
+        "date": "03 March 2024",
+        "description": "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a ",
+        "hero_image": "https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "content": [
+            {
+                "sub_heading": "What is UI/UX ?",
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            },
+            {
+                "sub_heading": "Who needs to come into the field of UI/UX",
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            },
+            {
+                "sub_heading": "What are the pre-requisites of coming into UI/UX",
+                "images": [
+                    "https://images.unsplash.com/photo-1538121915146-1dedb4191b21?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                ],
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            },
+            {
+                "sub_heading": "How did I start my journey",
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            },
+            {
+                "sub_heading": "How should you start your journey",
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            },
+            {
+                "sub_heading": "Some resources you can follow ",
+                "paras": [
+                    "Lorem ipsum dolor sit amet consectetur. Viverra tellus sed malesuada quam amet. Est viverra morbi aenean egestas pretium aliquam iaculis pellentesque a. Malesuada urna eleifend venenatis tristique consectetur elementum nulla. Aliquet convallis nisl tristique etiam tellus quis. Sit massa cursus netus faucibus morbi. Dictum est urna neque nibh. Nulla fringilla a pretium pretium elementum nunc. Volutpat praesent morbi mi aenean vel. Ultricies nisl tortor eu quis dolor convallis risus odio rhoncus. Morbi rhoncus consequat ultrices nunc hendrerit. Posuere phasellus libero nullam et vitae adipiscing. Lectus porttitor sit mattis vitae phasellus sit nec. Ac at fermentum egestas purus mi diam faucibus dolor morbi.",
+                    "Interdum libero tincidunt aenean felis purus. Nec egestas eu diam porta vitae tempus gravida suspendisse in. Viverra."
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "heading": "Sample Blog 2",
+        "author": "Hamza Ziyard",
+        "date": "03 March 2024",
+        "description": "This is a sample blog post.",
+        "hero_image": "https://plus.unsplash.com/premium_photo-1661679290109-770a3e282fa9?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "content": [
+            {
+                "sub_heading": "Introduction",
+                "paras": [
+                    "Paragraph 1",
+                    "Paragraph 2"
+                ]
+            },
+            {
+                "sub_heading": "Conclusion",
+                "paras": [
+                    "Conclusion paragraph"
+                ]
+            }
+        ]
+    }
+]

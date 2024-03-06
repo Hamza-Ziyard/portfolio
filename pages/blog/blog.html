@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/favicon//site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/favicon//safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <div class="container px-2 px-md-0">
+        <!-- <div class="center-border-box"></div> -->
+        <div
+          class="d-flex justify-content-between align-items-center py-2 py-md-3"
+        >
+          <a href="../../index.html"><h6 class="fw-bold">HZ</h6></a>
+          <div class="d-flex gap-4">
+            <a href="../about.html">About</a>
+            <a href="#" class="fw-bold">Blogs</a>
+            <a href="tel:0776145330">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container py-5 px-0 blog-list">
+      <input
+        type="text"
+        id="search"
+        class="form-control fw-lighter mb-4 rounded py-2 px-4 z-3"
+        placeholder="Search for a blog..."
+        data-aos="fade-up"
+        data-aos-duration="700"
+      />
+      <div id="blog-content" class="mb-4">
+        <!-- Blog content will be dynamically inserted here -->
+      </div>
+    </div>
+    <footer class="">
+      <div class="container px-0">
+        <div class="d-md-flex justify-content-between align-items-center py-3">
+          <h6 class="text-center text-md-start">
+            Copyright © 2024 Hamza Ziyard
+          </h6>
+          <div
+            class="d-flex flex-column flex-md-row gap-1 gap-md-4 justify-content-center align-items-center"
+          >
+            <a href="https://www.linkedin.com/in/hamza-ziyard/" target="_blank"
+              >Linkedin</a
+            >
+            <a href="https://www.behance.net/hamza-ziyard" target="_blank"
+              >Behance</a
+            >
+            <a href="https://dribbble.com/hamza_ziyard" target="_blank"
+              >Dribbble</a
+            >
+            <a href="mailto:hamzaziyard.ux@gmail.com"
+              >hamzaziyard.ux@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Fetch blogs data from JSON file
+        $.getJSON("blogs.json", function (blogs) {
+          // Initialize blog data for autocomplete
+          var blogTitles = blogs.map((blog) => blog.heading);
+
+          // Autocomplete search bar
+          $("#search").autocomplete({
+            source: blogTitles,
+            select: function (event, ui) {
+              // Redirect to the selected blog post page
+              window.location.href = `blog_inner.html?id=${
+                blogs.find((blog) => blog.heading === ui.item.value).id
+              }`;
+            },
+          });
+
+          // Function to generate blog HTML
+          function generateBlogHTML(blog) {
+            // Define the maximum number of characters to display
+            const maxChars = 200;
+            // Truncate the description to a maximum of two and a half lines
+            let truncatedDescription =
+              blog.description.length > maxChars
+                ? blog.description.substring(0, maxChars) + "..."
+                : blog.description;
+
+            return `
+                <a href="blog_inner.html?id=${blog.id}">
+                    <div class=" border-top pt-4 d-flex flex-column flex-md-row gap-4 mb-4 h-100" data-aos="fade-up" data-aos-duration="700">
+                        <img src="${blog.hero_image}" class="w-25 img-fluid card-img-top rounded" alt="...">
+                        <div class="">   
+
+                            <p class="mb-1"><small class="text-muted text-uppercase">${blog.date}</small></p>
+                            <h2 class="">${blog.heading}</h2>
+                            <p class="text-muted mt-md-3">${truncatedDescription}</p>
+                            <p class="mt-5"><small class="text-muted"><img src='../../assets/img/blog/Hamza Ziyard.jpg' width="20" height="20" class="rounded-circle"> ${blog.author}</small></p>
+                        </div>
+                    </div>
+                </a>
+            
+            `;
+          }
+
+          // Generate blog cards
+          $.each(blogs, function (index, blog) {
+            $("#blog-content").append(generateBlogHTML(blog));
+          });
+        });
+      });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
